@@ -45,13 +45,18 @@ main h1 {
 background-color: #F230E5;   /* Mudar depois */
     padding: 10px;
     border-radius: 15px;
+    
 }
 
 #button2 {
     background-color: #0713F2; /* Mudar depois */
     padding: 10px;
     border-radius: 15px;
+    
 }
+
+
+    
 
 .social-icons {
     display: flex;
