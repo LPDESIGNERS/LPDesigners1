@@ -15,7 +15,11 @@
     
 }
 
-
+body{
+    background-image: url(/assets/favicon.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
 body, html{
     height: 100%;
     background-color: #0d0d26;
