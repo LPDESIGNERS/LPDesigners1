@@ -18,8 +18,8 @@
 
 body, html{
     height: 100%;
-    background-color: var(--cor1);
-    color: var(--cor2);
+    background-color: #0d0d26;
+   
 }
 
 main {
@@ -28,22 +28,23 @@ main {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    color: black;
 }
 
 main h1 {
     font-size: 65px;
     margin: 15px;
+    color:#F230E5;
 }
 
 #button1 {
-    background-color: blueviolet;   /* Mudar depois */
+
+background-color: #BD88F2;   /* Mudar depois */
     padding: 10px;
     border-radius: 15px;
 }
 
 #button2 {
-    background-color: rgb(8, 197, 188); /* Mudar depois */
+    background-color: #0713F2; /* Mudar depois */
     padding: 10px;
     border-radius: 15px;
 }
