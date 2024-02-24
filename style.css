@@ -32,6 +32,9 @@ main {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    max-width: 768px;
+    
+    
 }
 
 main h1 {
