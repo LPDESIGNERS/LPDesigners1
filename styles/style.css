@@ -54,7 +54,7 @@ header {
     list-style: none;
     gap: 20px;
     position: relative; /* Adiciona um contexto de posicionamento */
-
+    z-index: 1; /* Ensure icons are below h1 */
 }
 
 .lista-icones a {
@@ -68,7 +68,7 @@ header {
 
 .lista-icones a::before {
     content: " ";
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 0px;
