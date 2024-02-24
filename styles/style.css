@@ -21,6 +21,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(3px);
+
 }
 
 header {
@@ -42,12 +43,18 @@ header {
     font-size: 35px;
     letter-spacing: 0.4rem;
     cursor: pointer;
+    max-width: 600px; 
+    min-width: 40px;
 }
 
 .lista-icones {
     display: flex;
     list-style: none;
     gap: 20px;
+    max-width: 600px;
+    min-width: 300px;
+    position: relative; /* Adiciona um contexto de posicionamento */
+
 }
 
 .lista-icones a {
@@ -56,6 +63,7 @@ header {
     padding: 15px;
     transition: 2ms ease-in;
     position: relative;
+    
 }
 
 .lista-icones a::before {
@@ -78,6 +86,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 600px; /* Reduz a largura máxima para 90% quando a largura da tela for menor que 600px */
+    min-width: 300px;
 }
 
 .principal {
@@ -85,13 +95,16 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 600px; /* Reduz a largura máxima para 90% quando a largura da tela for menor que 600px */
+    min-width: 300px;
 }
 
 .texto-principal {
-    width: 850px;
     font-size: 40px;
     text-align: center;
     margin-bottom: 3px;
+    max-width: 600px; /* Reduz a largura máxima para 90% quando a largura da tela for menor que 600px */
+    min-width: 300px;
 }
 
 .texto-secundario {
@@ -102,7 +115,6 @@ main {
 }
 
 p {
-    width: 600px;
     text-align: center;
     font-size: 18px;
 }

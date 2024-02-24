@@ -25,18 +25,18 @@ body, html{
     background-color: #0d0d26;
    
 }
-
+@media screen and (max-width: 600px) {
 main {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
+    max-width: 90%; /* Reduz a largura máxima para 90% quando a largura da tela for menor que 600px */
     
-    max-width: 600px;
-    min-width: 300px;
     
 }
-
+}
 main h1 {
     font-size: 65px;
     margin: 15px;
