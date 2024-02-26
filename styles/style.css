@@ -1,5 +1,17 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@media screen and (max-width: 600px) {
+    main {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        max-width: 90%; /* Reduz a largura máxima para 90% quando a largura da tela for menor que 600px */
+        
+        
+    }
+}
 
 * {
     margin: 0;
@@ -111,6 +123,7 @@ main {
     color: rgb(211, 211, 211);
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
     letter-spacing: 1px;
 }
 
