@@ -1,17 +1,5 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@media screen and (max-width: 600px) {
-    main {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        max-width: 90%; /* Reduz a largura máxima para 90% quando a largura da tela for menor que 600px */
-        
-        
-    }
-}
 
 * {
     margin: 0;
@@ -20,45 +8,44 @@
 }
 
 html {
-    width: 100vw;
-    height: 100vh;
     font-family: "Lato";
     color: white;
 }
 
 body {
-    background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(../img/background.jpg);
+    background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(20, 20, 20, 1)), url(../img/background.jpg);
     background-position: center center;
     background-position-y: 0px;
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(3px);
-
+    min-height: 100vh;
 }
 
 header {
     width: 100%;
-    height: 7vh;
     background-color: rgba(22, 22, 22, 0.2);
+    margin-bottom: 20px;
 }
 
 .menu-content {
+    padding-block: 15px;
     text-transform: uppercase;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-around;
     align-items: center;
     font-size: 1.8rem;
 }
 
 .h1-header {
-    position: relative; /* Add positioning */
-    z-index: 1; /* Ensure the h1 is above other elements */
-    font-size: 35px;
+    font-size: clamp(28px, 4vw, 35px);
     letter-spacing: 0.4rem;
     cursor: pointer;
-    max-width: 600px; 
-    min-width: 40px;
+    max-width: none;
+    margin-inline: center;
 }
 
 .lista-icones {
@@ -93,26 +80,18 @@ header {
     width: 100%;
 }
 
-
-main {
-    height: 93vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
 .principal {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    max-width: 600px; /* Reduz a largura máxima para 90% quando a largura da tela for menor que 600px */
-    min-width: 300px;
+    justify-content: center;
+    width: min(100% - 30px, 960px);
+    margin-inline: auto;
+    min-height: calc(100vh - 140px);
 }
 
 .texto-principal {
-    font-size: 40px;
+    font-size: clamp(24px, 4vw, 40px);
     text-align: center;
     margin-bottom: 3px;
     max-width: 600px; /* Reduz a largura máxima para 90% quando a largura da tela for menor que 600px */
@@ -121,13 +100,23 @@ main {
 
 .texto-secundario {
     color: rgb(211, 211, 211);
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
     letter-spacing: 1px;
+    font-size: clamp(20px, 4vw, 30px);
 }
 
 p {
     text-align: center;
     font-size: 18px;
+    max-width: 800px;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
